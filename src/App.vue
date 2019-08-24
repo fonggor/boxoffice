@@ -164,7 +164,7 @@
         methods: {
             getData() {
                 setInterval(()=>{
-                    this.$http.get('/api/box/second.json').then(res => {
+                    this.$http.get('/tp/promovie/api/box/second.json').then(res => {
                         this.dataList = res.data.data
                         this.letTimeGo()
                     })
@@ -298,7 +298,7 @@
         },
         created() {
             this.getData()
-            this.$http.get('/api/box/second.json').then(res => {
+            this.$http.get('/tp/promovie/api/box/second.json').then(res => {
                 this.dataList = res.data.data
                 this.letTimeGo()
             })
